@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Web Application</title>
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <div class="intro">
+    <h1>Welcome!</h1>
+    <p>"Where Ideas Collide."</p>
+ </div>
+ 
+   <% if(blogList.length == 0) {%>
+        <h3>You Dont Have Any Blog Yets.</h3>   
+    <%} else{%>
+        <h3>Your Blogs :</h3>
+       <div class="blogs">
+        <% for (let i = 0; i < blogList.length; i++){%>
+            <div class="blog-box">
+            <h4><%= blogList[i].title.slice(0,30) %></h4>
+            <p><%= blogList[i].description?.slice(0,300) %></p>
+                <a  href="/blogDetails/<%= blogList[i].id %>">
+                    View Blog</a>
+                 </div>
+       <% }  %>
+    <% } %> 
+    
+</div>
+</div>
+<%- include("partials/footer.ejs") %>
+</body>
+</html>

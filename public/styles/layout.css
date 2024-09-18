@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+   padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+text-align: center;
+padding-left: 2.5%;
+padding-right: 3%;
+min-height: 70vh;
+}
+.intro h1{
+font-weight: 400;
+font-size: 72px;
+
+}
+.intro p{
+    font-size: 25px;
+    margin-top: -30px;
+    font-style: italic;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: -3%;
+}
+.blogs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+.blog-box{
+    height: 500px;
+    min-width: 250px;
+    max-width: min-content;
+    border: 1px solid black;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.blog-box h4{
+    font-size: 35px;
+    text-align: left;
+}
+.blog-box p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    margin-top: -15px;
+    
+}
+.blog-box a {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 5%;
+    width:  70px;
+    height: 40px;
+    margin-left: 28%;
+    margin-top: 2%;
+    text-decoration: none;
+    padding: 1.5%;
+}
+.compose{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 50px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.compose h2{
+    font-weight: 400;
+}
+.title{
+    max-width: 70%;
+    width: 100%;
+    min-height: 5%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5%;
+}
+.content{
+    max-width: 70%;
+    width: 100%;
+    min-height: 18rem;
+    height: 100%;
+    text-align: left;
+    font-size: 0.75rem;
+    padding: 0.5%; 
+    margin-top: 2%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.pub-btn{
+    margin-top: 2%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius:5% ;
+    min-width: 10%;
+    width: 100;
+    min-height: 2rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+.details{
+    text-align: center;
+}
+.details p{
+    padding-left: 3%;
+    padding-right: 4%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -1%;
+    font-size: 1rem;
+}
+.details h1{
+    font-size: 2.5rem;
+    font-weight: 550;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    margin-bottom: 10%;
+}
+.dlt-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    height: 2.025rem;
+    width: 80px;
+    font-size: 20px;
+    border-radius: 5%;
+    font-weight: 400;
+    margin-left: 20px;
+    padding : 3px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.edt-btn{
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 5%;
+    width:  70px;
+    height: 1.75rem;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 4px;
+}
+@media(max-width : 600px) {
+.intro h1{
+    font-size: 50px;
+}
+.intro p{
+    font-size: 15px;
+}
+h3{
+    font-size: 20px;
+}
+  }
